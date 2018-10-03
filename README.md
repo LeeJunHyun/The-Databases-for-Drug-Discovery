@@ -20,6 +20,31 @@
 
 * PubChem
 
+* Protein Data Bank [Helen Berman et al., 2003] [Kleywegt GJ 2018]
+    * information about the 3D structures of proteins, nucleic acids, and complex assemblies.
+    * http://www.wwpdb.org/
+    * https://www.ebi.ac.uk/pdbe/
+    * https://www.rcsb.org/
+    * https://pdbj.org/
+
+* GEO [Tanya Barrett, 2013]
+    * Gene Expression Omnibus
+    * international public repository that archives and freely distributes microarray, next-generation sequencing, and other forms of high-throughput functional genomics data submitted by the research community.
+    * https://www.ncbi.nlm.nih.gov/geo/
+
+* PharmGKB [M. Whirl-Carrillo et al., 2012]
+    * PHARMACOGENOMICS. KNOWLEDGE BASE.
+    * knowledge about the impact of genetic variation on drug response
+    * relationship between genetic variations and how our body responds to medications.
+    * Drugs, Pathways, Dosing Guidelines, Drug Labels
+    * https://www.pharmgkb.org/
+
+* STITCH
+    * Chemical-Protein Interaction Networks
+    * ORGANISMS 2031, CHEMICALS 0.5 mio, PROTEINS 9.6 mio, INTERACTIONS 1.6 bn
+    * http://stitch.embl.de/
+
+
 * RDKit [G. Landrum, 2006] [Landrum, 2016]
     * Rdkit: Open-source cheminformatics
     * SMILES -> chemical structure graph tool
