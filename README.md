@@ -1,5 +1,5 @@
 **This version is just a draft, it is not ordered, categorized, completed yet.**
-**If you know other databases, plz notice me. PR or Issues is always available.**
+**If you know other databases, plz notice me. PR or Issues are always available.**
 
 # Databases
 
