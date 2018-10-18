@@ -157,12 +157,12 @@ breast cancer subtype scheme. Luminal A, Luminal B, Basal-like, HER2.
 * DrugTargetCommons [Jing Tang et al., 2018]
     * Drug Target Commons (DTC) is a crowd-sourcing platform to improve the consensus and use of drug-target interactions.
     * time stamp : 2018-10-18
-        |  | Assay annotation | Total |
-        | :--------: | :--------: | :--------: |
-        | Compounds | 4,276 | 1,746,997 |
-        | Targets | 1,007 | 13,023 |
-        | Publications | 346 | 69,955 |
-        | Bioactivities | 204,901 | 14,820,874 |
+    |  | Assay annotation | Total |
+    | :--------: | :--------: | :--------: |
+    | Compounds | 4,276 | 1,746,997 |
+    | Targets | 1,007 | 13,023 |
+    | Publications | 346 | 69,955 |
+    | Bioactivities | 204,901 | 14,820,874 |
     * https://drugtargetcommons.fimm.fi/
 
 *  IDG Pharos
