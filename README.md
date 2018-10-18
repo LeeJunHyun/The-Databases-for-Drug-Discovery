@@ -1,6 +1,5 @@
 **This version is just a draft, it is not ordered, categorized, completed yet.**
 **If you know other databases, plz notice me. PR or Issues are always available.**
-
 # Databases
 
 * ZINC database [J. J. Irwin et al., 2012] [Sterling and Irwin, 2015] [Kusner et al., 2017]
@@ -42,8 +41,8 @@
 * STITCH
     * Chemical-Protein Interaction Networks
     * ORGANISMS 2031, CHEMICALS 0.5 mio, PROTEINS 9.6 mio, INTERACTIONS 1.6 bn
+    * 68,000 different chemicals, including 2200 drugs, and connects them to 1.5 million genes across 373 genomes.
     * http://stitch.embl.de/
-
 
 * RDKit [G. Landrum, 2006] [Landrum, 2016]
     * Rdkit: Open-source cheminformatics
@@ -58,7 +57,7 @@
 * PAM50 molecular subtype<br>
 breast cancer subtype scheme. Luminal A, Luminal B, Basal-like, HER2.
 
-* DRUGBANK
+* DrugBank
     * bioinformatics and cheminformatics resource that combines detailed drug data with comprehensive drug target information.
     * `version 5.1.1`, released 2018-07-03, contains 11,877 drug entries including 2,474 approved small molecule drugs, 1,180 approved biotech (protein/peptide) drugs, 129 nutraceuticals and over 5,748 experimental drugs. Additionally, 5,131 non-redundant protein (i.e. drug target/enzyme/transporter/carrier) sequences are linked to these drug entries. Each DrugCard entry contains more than 200 data fields with half of the information being devoted to drug/chemical data and the other half devoted to drug target or protein data.
     * https://www.drugbank.ca/
@@ -113,9 +112,11 @@ breast cancer subtype scheme. Luminal A, Luminal B, Basal-like, HER2.
     * https://chembl.gitbook.io/chembl-interface-documentation/downloads
 
 
-* TTD database [Chen et al., 2002]
+* TTD database [Chen et al., 2002] [Y. H. Li et al., 2018]
     * therapeutic target database
+    * database to provide information about the known and explored therapeutic protein and nucleic acid targets, the targeted disease, pathway information and the corresponding drugs directed at each of these targets. Also included in this database are links to relevant databases containing information about target function, sequence, 3D structure, ligand binding properties, enzyme nomenclature and drug structure, therapeutic class, clinical development status. All information provided are fully referenced.
     * protein and nucleic acid target
+    * https://db.idrblab.org/ttd/
 
 * PDBBind dataset [Liu et al., 2017]
     * binding affinities for the protein-ligand complexes in the Protein Data Bank (PDB).
@@ -146,6 +147,64 @@ breast cancer subtype scheme. Luminal A, Luminal B, Basal-like, HER2.
     * 1178 high-resolution proteins in a structurally non-redundant subset of the Protein Data Bank using simple features such as secondary-structure content, amino acid propensities, surface properties and ligands.
     * two functional groupings, enzymes and non-enzymes.
     * nodes are amino acids and two nodes are connected if they are less than 6 Angstroms apart.
+
+* HMDD [Lu M et al., 2008] [Li Y et al., 2014]
+    * the Human microRNA Disease Database
+    * database that curated experiment-supported evidence for human microRNA (miRNA) and disease associations.
+    * `HMDD v3.0`, released June 28 2018, 32281 miRNA-disease association entries which include 1102 miRNA genes, 850 diseases from 17412 papers.
+    * http://www.cuilab.cn/hmdd
+
+* DrugTargetCommons [Jing Tang et al., 2018]
+    * Drug Target Commons (DTC) is a crowd-sourcing platform to improve the consensus and use of drug-target interactions.
+    * time stamp : 2018-10-18
+        |  | Assay annotation | Total |
+        | :--------: | :--------: | :--------: |
+        | Compounds | 4,276 | 1,746,997 |
+        | Targets | 1,007 | 13,023 |
+        | Publications | 346 | 69,955 |
+        | Bioactivities | 204,901 | 14,820,874 |
+    * https://drugtargetcommons.fimm.fi/
+
+*  IDG Pharos
+    * compound and target data resources on public domain
+    * Ligand, disease, target
+    * https://druggablegenome.net/
+    * https://pharos.nih.gov/idg/index
+
+
+* DDIExtraction2013 [BioNLP Challenge]
+    * Extraction of Drug-Drug Interactions from BioMedical Texts
+    * Task 1: Recognition and classification of drug names.
+    * Task 2: Extraction of drug-drug interactions.
+    * https://www.cs.york.ac.uk/semeval-2013/task9/
+
+* Biocreative PPI [BioNLP Kaggle]
+    * BioCreAtIvE (Critical Assessment of Information Extraction Systems in Biology)
+    * text mining and information extraction systems applied to the biological domain.
+    * Gene mention tagging [GM] 
+    * Gene normalization [GN] 
+    * Extraction of protein-protein interactions from text
+    * http://biocreative.sourceforge.net/index.html
+
+
+* Polysearch2 [Liu Y et al., 2015]
+    * online text-mining system for identifying relationships between human diseases, genes, proteins, drugs, metabolites, toxins, metabolic pathways, organs, tissues, subcellular organelles, positive health effects, negative health effects, drug actions, Gene Ontology terms, MeSH terms, ICD-10 medical codes, biological taxonomies and chemical taxonomies.
+    * http://polysearch.cs.ualberta.ca/
+
+* SuperTarget [BioNLP]
+    * database developed in the first place to collect informations about drug-target relations. It consist mainly of three different types of entities: DRUGS, PROTEINS, SIDE-EFFECTS.
+    * database that contains a core dataset of about 7300 drug-target relations of which 4900 interactions have been subjected to a more extensive manual annotation effort. SuperTarget provides tools for 2D drug screening and sequence comparison of the targets. The database contains more than 2500 target proteins, which are annotated with about 7300 relations to 1500 drugs
+    * data from DrugBank, BindingDB and SuperCyp
+    * http://insilico.charite.de/supertarget/index.php?site=about
+
+* ConsensusPathDB [Kamburov, A. et al., 2013]
+    * [2018.10.04] unique physical entities: 170,276, unique interactions: 603,543, gene regulations: 17,410, protein interactions: 397,088, genetic interactions: 1,738, biochemical reactions: 23,482, drug-target interactions: 163,825, pathways: 5,359
+    * Data originate from currently 32 public resources for interactions and interactions that we have curated from the literature.
+    * http://cpdb.molgen.mpg.de/
+
+
+* Others
+    * http://polysearch.cs.ualberta.ca/otherdatabases
 
 ---
 
