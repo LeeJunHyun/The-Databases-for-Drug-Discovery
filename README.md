@@ -49,8 +49,25 @@
     * SMILES -> chemical structure graph tool
     * https://www.rdkit.org/
 
+* Decagon (Multimodal graph of polypharmacy) [Marinka Zitnik, 2018]
+    * Protein-protein interaction network
+    * Drug-target protein associations
+    * Drug-target protein associations culled from several curated databases
+    * Polypharmacy side effects in the form of (drug A, side effect type, drug B) triples
+    * Side effects of individual drugs in the form of (drug A, side effect type) tuples
+    * Side effect categories
+    * http://snap.stanford.edu/decagon/
 
-* RNA-seq based expression profiles of genes extracted from TCGA bresast cancer level3 data[Prat Aparicio, 2012]
+* DeepChem
+    * DeepChem aims to provide a high quality open-source toolchain that democratizes the use of deep-learning in drug discovery, materials science, quantum chemistry, and biology.
+    * https://deepchem.io/
+    * https://github.com/deepchem/deepchem
+
+* MoleculeNet [Zhenqin Wu et al., 2017]
+    * MoleculeNet, molecular molecule · molecular physics · biophysics · living body for discovery of new drugs? A data set containing four kinds of data is released at DeepChem.
+    * https://arxiv.org/abs/1703.00564
+
+* RNA-seq based expression profiles of genes extracted from TCGA breast cancer level3 data[Prat Aparicio, 2012]
 
 * Cancer hall-mark gene sets [Liberzon et al., 2015]
 
@@ -138,6 +155,31 @@ breast cancer subtype scheme. Luminal A, Luminal B, Basal-like, HER2.
         * Compared to known molecules in PubChem, GDB-17 molecules are much richer in nonaromatic heterocycles, quaternary centers, and stereoisomers, densely populate the third dimension in shape space, and represent many more scaffold types.
     * http://gdb.unibe.ch/downloads/
 
+* QM (Quantum machine) dataset [Blum L. C. et al., 2009]
+    * QM7
+        * subset of GDB-13 (a database of nearly 1 billion stable and synthetically accessible organic molecules) composed of all molecules of up to 23 atoms (including 7 heavy atoms C, N, O, and S), totalling 7165 molecules.
+    * QM7b
+        * extension of the QM7 dataset for multitask learning where 13 additional properties (e.g. polarizability, HOMO and LUMO eigenvalues, excitation energies) have to be predicted at different levels of theory (ZINDO, SCS, PBE0, GW). Additional molecules comprising chlorine atoms are also included, totalling 7211 molecules.
+    * QM9
+        * computed geometric, energetic, electronic, and thermodynamic properties for 134k stable small organic molecules made up of CHONF. These molecules correspond to the subset of all 133,885 species with up to nine heavy atoms (CONF) out of the GDB-17 chemical universe of 166 billion organic molecules.
+    * QM8 [L. Ruddigkeit et al., 2012]
+        * training set of 10 000 molecules, (coupled-cluster) CC2  excitation energies can be reproduced to within ±0.1 eV for the remaining molecules.
+    * MD Trajectories of small molecules [S. Chmiela et al., 2017]
+        * The molecular dynamics (MD) datasets in this package range in size from 150k to nearly 1M conformational geometries. All trajectories are calculated at a temperature of 500 K and a resolution of 0.5 fs. The molecules have different sizes and the molecular PESs exhibit different levels of complexity. 
+    * MD Trajectories of C7O2H10
+        * This data set consists of molecular dynamics trajectories of 113 randomly selected C7O2H10 isomers calculated at a temperature of 500 K and resolution of 1fs using density functional theory with the PBE exchange-correlation potential. C7O2H10 is the largest set of isomer of QM9.
+    * Datasets including densities
+        * These datasets contain not only molecular geometries and energies but also valence densities. For each dataset, the energies are given in energies.txt (in kcal/mol, one line per molecular geometry). The densities are given in densities.txt (in Fourier basis coefficients, one line per molecular geometry). The structures are given in structures.xyz (with positions in Bohr).
+    * ISO17 - MD Trajectories of C7O2H10 with total energies and atomic forces [K.T. Schütt et al., 2017]
+        * The molecules were randomly drawn from the largest set of isomers in the QM9 dataset [1] which consists of molecules with a fixed composition of atoms (C7O2H10) arranged in different chemically valid structures. It is an extension of the ismoer MD data used in [2].
+        * [1] R. Ramakrishnan, P. O. Dral, M. Rupp, and O. A. von Lilienfeld. Quantum chemistry structures and properties of 134 kilo molecules. Scientific Data, 1, 2014.
+        * [2] Schütt, K. T., Arbabzadah, F., Chmiela, S., Müller, K. R., & Tkatchenko, A. (2017). Quantum-chemical insights from deep tensor neural networks. Nature Communications, 8, 13890.
+    * http://quantum-machine.org/datasets/
+
+* dSPP: Database of structural propensities of proteins
+    * This repository comprises residual propensities of individual residues in proteins to populate helical, extended or disordered structural states. The data are derived from experimental NMR assignments of unrelated proteins in solution state near physiological conditions. The residue-specific propensity scores are normalized in a range -1.0 to 1.0 and prepared for machine learning in Plain-text, Numerical Python, Keras and Tensorflow formats.
+    * https://peptone.io/dspp
+
 * Organic photovoltaics [Hachmann, J. et al., 2014]
     * candidate structures for organic electronic materials in particular photovoltaics
     * Harvard Clean Energy Project.
@@ -157,8 +199,8 @@ breast cancer subtype scheme. Luminal A, Luminal B, Basal-like, HER2.
 * DrugTargetCommons [Jing Tang et al., 2018]
     * Drug Target Commons (DTC) is a crowd-sourcing platform to improve the consensus and use of drug-target interactions.
     * https://drugtargetcommons.fimm.fi/
-    
-[2018.10.18]
+
+[2018-10-18]
 
 |  | Assay annotation | Total |
 | :--------: | :--------: | :--------: |
@@ -166,7 +208,6 @@ breast cancer subtype scheme. Luminal A, Luminal B, Basal-like, HER2.
 | Targets | 1,007 | 13,023 |
 | Publications | 346 | 69,955 |
 | Bioactivities | 204,901 | 14,820,874 |
-
 
 *  IDG Pharos
     * compound and target data resources on public domain
@@ -205,9 +246,26 @@ breast cancer subtype scheme. Luminal A, Luminal B, Basal-like, HER2.
     * Data originate from currently 32 public resources for interactions and interactions that we have curated from the literature.
     * http://cpdb.molgen.mpg.de/
 
+* ChemDataExtractor [Swain, M. C., & Cole, J. M, 2016]
+    * ChemDataExtractor is a python toolkit for automatically extracting chemical information from scientific documents.
+    * HTML, XML and PDF document readers
+    * Chemistry-aware natural language processing pipeline
+    * Chemical named entity recognition
+    * Rule-based parsing grammars for property and spectra extraction
+    * Table parser for extracting tabulated data
+    * Document processing to resolve data interdependencies
+
 
 * Others
     * http://polysearch.cs.ualberta.ca/otherdatabases
+
+* https://cancer.sanger.ac.uk/census
+
+* http://www.cbioportal.org/data_sets.jsp
+
+* Cancer Gene Expression Datasets
+    * two datasets termed GCM and Acute Leukemia datasets
+    * https://zenodo.org/record/21712#.W9KGAnUzaPB
 
 ---
 
